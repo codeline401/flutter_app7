@@ -2,15 +2,11 @@
 
 A new Flutter project.
 
-## Getting Started
+The BottomNavogatorBar items property has a list of three BottomNavigatorBarItems.
 
-This project is a starting point for a Flutter application.
+For each BottomNavigatorBarItem, we set an icon property and a label property.
+The BottomNavigationBar onTap passes the selected index value to the _chagePage method.
+The _changePage method uses setState() to set _currentIndex and _currentPage to display.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The _currentIndex sets the selected BottomNavigationBarItem, and the _currentPage sets the current
+page to display from the _listePages List.
